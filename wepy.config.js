@@ -5,7 +5,7 @@ module.exports = {
   wpyExt: '.wpy',
   eslint: true,
   cliLogs: !prod,
-  static: ['static'],
+  static: ['./src/assets'],
   build: {
   },
   resolve: {
@@ -35,4 +35,3 @@ module.exports = {
     noPromiseAPI: ['createSelectorQuery']
   }
 }
-
