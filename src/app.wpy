@@ -18,9 +18,6 @@ wepy.use(promisify);
 wepy.app({
 
   onLaunch() {
-    wepy.wx.login().then(response => {
-      console.log('login: ', response);
-    });
   },
 
   methods: {
@@ -32,6 +29,7 @@ wepy.app({
     pages: [
       'pages/index',
       'pages/user',
+      'pages/auth/login',
     ],
     window: {
       backgroundTextStyle: 'light',
