@@ -52,10 +52,10 @@
           <div class="weui-cell__ft weui-cell__ft_in-access"></div>
         </a>
 
-        <a url="" class="weui-cell weui-cell_access">
-          <div class="weui-cell__bd" url="">
+        <a url="/pages/replies/user-index?id={{ user.id }}" class="weui-cell weui-cell_access">
+          <a class="weui-cell__bd" url="">
             <div class="weui-cell__bd">Ta 的回复</div>
-          </div>
+          </a>
           <div class="weui-cell__ft weui-cell__ft_in-access"></div>
         </a>
 
