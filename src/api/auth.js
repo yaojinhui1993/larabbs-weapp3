@@ -8,7 +8,7 @@ export function login(data) {
 }
 
 export function refresh(token) {
-  return request('/authorizations/current', {
+  return request('authorizations/current', {
     method: 'put',
     header: {
       'Authorization': "Bearer " + token,
