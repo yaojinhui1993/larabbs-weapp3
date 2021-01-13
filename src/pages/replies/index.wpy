@@ -38,7 +38,11 @@ wepy.page({
       this.page = 1;
       this.noMoreData = false;
       this.loadData(true);
-    })
+    });
+
+    eventHub.$on('reply-deleted', (r) => {
+      this.resourceData = this.resourceData.filter((reply) => reply.id !== r.id )
+    });
   },
   methods: {
     fetchData() {
